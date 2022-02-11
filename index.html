@@ -14,31 +14,36 @@
     <div id="calc-container">
         <div id="calc-body" class="calc-body-c">
             <div id="calc-display" class="calc-body-c"> 
+                <p id="calc-display-numeros"></p>
                 <h2 id="calc-display-result"></h2>
             </div>
-                <div class="calc-buttons-row">
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">7</button>
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">8</button>
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">9</button>
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">&divide;</button>
+                <div class="calc-buttons-row" id="calc-buttons-right">
+                    <button class="calc-button-c calc-special-button" onclick="removeCharacterFromDisplay()">C</button>
+                    <button class="calc-button-c calc-special-button" onclick="removeAll()">CA</button>
                 </div>
                 <div class="calc-buttons-row">
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">4</button>
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">5</button>
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">6</button>
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">&times;</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('7')">7</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('8')">8</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('9')">9</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('/')">&divide;</button>
                 </div>
                 <div class="calc-buttons-row">
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">1</button>
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">2</button>
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">3</button>
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">+</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('4')">4</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('5')">5</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('6')">6</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('*')">&times;</button>
                 </div>
                 <div class="calc-buttons-row">
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">0</button>
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">,</button>
-                        <button class="calc-button-c" id="equals-button" onclick="calculate()">=</button>
-                        <button class="calc-button-c" onclick="addCharacterToDisplay()">-</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('1')">1</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('2')">2</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('3')">3</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('+')">+</button>
+                </div>
+                <div class="calc-buttons-row">
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('0')">0</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('.')">,</button>
+                        <button class="calc-button-c" id="equals-button" onclick="addResultToDisplay()">=</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay('-')">-</button>
                 </div>              
             </div>
         </div>

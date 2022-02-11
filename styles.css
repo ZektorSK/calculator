@@ -29,6 +29,8 @@ p{
     padding: 20px 30px;
     border-radius: 8px;
     border-color: rgb(65, 65, 65);
+    background-color: #141616;
+    color: white;
     box-shadow: 5px 5px 5px rgb(24, 24, 24);
     margin: 0 43px 0 0;
 }
@@ -51,6 +53,11 @@ p{
     background-color: orangered;
 }
 
+.calc-special-button{
+    font-size: 28px;
+    padding: 10px 20px;
+}
+
 #calc-container{
 
     width:auto;
@@ -65,7 +72,7 @@ p{
 }
 #calc-body{
     width: 500px;
-    height: 600px;
+    height: 680px;
     background-color: rgb(65, 65, 65);
     /*backdrop-filter: blur(6px);*/
     border: 20px;
@@ -75,16 +82,25 @@ p{
     width: 455px;
     height: 150px;
     background-color: rgb(116, 127, 143);
-    overflow: scroll;
+    overflow: auto;
     display: inline-block;
     margin: 20px 20px 20px 20px;
+}
 
-
-
+#calc-display-numeros{
+    text-align: left;
+    font-size: 30px;
+    font-family: "Impact";
+    color: rgb(255, 255, 255);
+    margin: 0 10px 0 10px;
 }
 
 #calc-display-result{
-    
+    font-size: 30px;
+    font-family: "Impact";
+    color: rgb(255, 255, 255);
+    text-align: right;
+    margin: 0 10px 0 10px;
 }
 
 .calc-buttons-row{
@@ -92,4 +108,9 @@ p{
     width: 100%;
     height: auto;
     margin: 10px 20px 10px 20px;
+}
+
+#calc-buttons-right{
+    display: flex;
+    justify-content: space-between;
 }
