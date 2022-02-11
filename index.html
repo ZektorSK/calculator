@@ -14,33 +14,32 @@
     <div id="calc-container">
         <div id="calc-body" class="calc-body-c">
             <div id="calc-display" class="calc-body-c"> 
+                <h2 id="calc-display-result"></h2>
             </div>
-            <div id="calc-buttons" class="calc-body-c">
                 <div class="calc-buttons-row">
-                        <button>7</button>
-                        <button>8</button>
-                        <button>9</button>
-                        <button>&times;</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">7</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">8</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">9</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">&divide;</button>
                 </div>
                 <div class="calc-buttons-row">
-                        <button>4</button>
-                        <button>5</button>
-                        <button>6</button>
-                        <button>&times;</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">4</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">5</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">6</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">&times;</button>
                 </div>
                 <div class="calc-buttons-row">
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button>&times;</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">1</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">2</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">3</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">+</button>
                 </div>
                 <div class="calc-buttons-row">
-                        <button>+/-</button>
-                        <button>0</button>
-                        <button>,</button>
-                        <button id="equals-button">=</button>
-                </div>                
-            </div>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">0</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">,</button>
+                        <button class="calc-button-c" id="equals-button" onclick="calculate()">=</button>
+                        <button class="calc-button-c" onclick="addCharacterToDisplay()">-</button>
+                </div>              
             </div>
         </div>
     </div>

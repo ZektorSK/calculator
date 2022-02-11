@@ -22,7 +22,33 @@ p{
 }
 
 .calc-button-c{
-    /**/
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    transition-duration: 0.2s;
+    padding: 20px 30px;
+    border-radius: 8px;
+    border-color: rgb(65, 65, 65);
+    box-shadow: 5px 5px 5px rgb(24, 24, 24);
+    margin: 0 43px 0 0;
+}
+
+.calc-button-c:hover{
+    background-color: rgb(98, 122, 160);
+}
+
+.calc-button-c:active {
+    background-color: rgb(98, 122, 160);
+    box-shadow: 5px 5px 5px black;
+    transform: translateY(4px);
+  }
+
+#equals-button:hover{
+    background-color: rgb(255, 111, 58);
+}
+
+#equals-button{
+    background-color: orangered;
 }
 
 #calc-container{
@@ -41,19 +67,29 @@ p{
     width: 500px;
     height: 600px;
     background-color: rgb(65, 65, 65);
-    backdrop-filter: blur(6px);
+    /*backdrop-filter: blur(6px);*/
     border: 20px;
-
-    /* Center vertically and horizontally */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #calc-display{
-    width: 450px;
-    height: 100px;
+    width: 455px;
+    height: 150px;
     background-color: rgb(116, 127, 143);
-    margin: 0 20px 80% 20px;
-    overflow:hidden;
+    overflow: scroll;
+    display: inline-block;
+    margin: 20px 20px 20px 20px;
+
+
+
+}
+
+#calc-display-result{
+    
+}
+
+.calc-buttons-row{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 10px 20px 10px 20px;
 }
