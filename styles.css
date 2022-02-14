@@ -90,14 +90,14 @@ p{
 #calc-display-numeros{
     text-align: left;
     font-size: 30px;
-    font-family: "Impact";
+    font-family: "Arial", sans-serif;
     color: rgb(255, 255, 255);
     margin: 0 10px 0 10px;
 }
 
 #calc-display-result{
     font-size: 30px;
-    font-family: "Impact";
+    font-family: "Arial", sans-serif;
     color: rgb(255, 255, 255);
     text-align: right;
     margin: 0 10px 0 10px;
