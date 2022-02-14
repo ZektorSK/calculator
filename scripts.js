@@ -5,13 +5,14 @@ function addCharacterToDisplay(content){
 
 function addResultToDisplay(){
     let display_el = document.getElementById("calc-display-result");
-    let problem = document.getElementById("calc-display-numeros");
-    display_el.innerHTML += '=';
+    let problem = document.getElementById("calc-display-numeros").innerHTML;
+    
+    display_el.innerHTML = "=";
     display_el.innerHTML += calculate(problem);
 }
 
 function calculate(content){
-    
+    return eval(String(content.replace("×", "*").replace("÷", "/")));
 }
 
 function removeCharacterFromDisplay(){
